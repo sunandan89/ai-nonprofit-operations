@@ -257,6 +257,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}.story-layer .thread{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+/* scale the whole page up on large screens */
+@media (min-width:1700px){html{zoom:1.15}}
+@media (min-width:2000px){html{zoom:1.3}}
+@media (min-width:2400px){html{zoom:1.55}}
+@media (min-width:3200px){html{zoom:2}}
 </style>
 </head>
 <body>
